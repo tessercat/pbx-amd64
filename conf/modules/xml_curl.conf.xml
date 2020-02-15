@@ -1,0 +1,15 @@
+<configuration name="xml_curl.conf" description="cURL XML Gateway">
+  <bindings>
+
+    <binding name="dialplan">
+      <param name="gateway-url" value="http://$${curl_gateway_url}/dialplan/" bindings="dialplan"/>
+      <param name="timeout" value="3"/>
+    </binding>
+
+    <binding name="directory">
+      <param name="gateway-url" value="http://$${curl_gateway_url}/directory/" bindings="directory"/>
+      <param name="timeout" value="3"/>
+    </binding>
+
+  </bindings>
+</configuration>

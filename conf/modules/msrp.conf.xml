@@ -1,0 +1,6 @@
+<configuration name="msrp.conf" description="MSRP">
+  <settings>
+    <param name="listen-ip" value="127.0.0.1"/>
+  </settings>
+</configuration>
+

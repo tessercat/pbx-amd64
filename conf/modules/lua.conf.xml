@@ -1,0 +1,15 @@
+<configuration name="lua.conf" description="LUA Configuration">
+  <settings>
+
+    <!-- Local scripts directory. -->
+    <param name="script-directory" value="$${script_dir}/?.lua"/>
+
+    <!-- Autostart scripts. -->
+    <!--<param name="startup-script" value="startup_script_1.lua"/>-->
+    <!--<param name="startup-script" value="startup_script_2.lua"/>-->
+
+    <!-- Event hooks. -->
+    <!--<hook event="CUSTOM" subclass="conference::maintenance" script="catch-event.lua"/>-->
+
+  </settings>
+</configuration>
