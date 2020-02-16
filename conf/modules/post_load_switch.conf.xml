@@ -1,4 +1,4 @@
-<configuration name="switch.conf" description="Core Configuration">
+<configuration name="post_load_switch.conf" description="Core Configuration">
 
   <cli-keybindings>
     <key name="1" value="help"/>

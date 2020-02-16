@@ -2,11 +2,15 @@
   <settings>
 
     <!-- Local scripts directory. -->
-    <param name="script-directory" value="$${script_dir}/?.lua"/>
+    <param name="script-directory" value="$${base_dir}/scripts/?.lua"/>
 
     <!-- Autostart scripts. -->
     <!--<param name="startup-script" value="startup_script_1.lua"/>-->
     <!--<param name="startup-script" value="startup_script_2.lua"/>-->
+
+    <!-- Third party package libraries. -->
+    <!-- <param name="module-directory" value="/usr/lib/lua/5.1/?.so"/> -->
+    <!-- <param name="module-directory" value="/usr/local/lib/lua/5.1/?.so"/> -->
 
     <!-- Event hooks. -->
     <!--<hook event="CUSTOM" subclass="conference::maintenance" script="catch-event.lua"/>-->

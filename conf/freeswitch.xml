@@ -3,7 +3,7 @@
 
   <X-PRE-PROCESS cmd="include" data="vars.xml"/>
 
-  <section name="configuration" description="XML Configuration">
+  <section name="configuration" description="Module Configuration">
     <X-PRE-PROCESS cmd="include" data="modules/*.xml"/>
   </section>
 

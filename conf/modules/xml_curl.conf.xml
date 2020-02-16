@@ -2,22 +2,34 @@
   <bindings>
 
     <binding name="dialplan">
-      <param name="gateway-url" value="http://$${curl_gateway_url}/fsapi" bindings="dialplan"/>
+      <!-- <param name="bind-local" value="$${local_ip_v4}" /> -->
+      <param name="gateway-url" value="$${curl_gateway_url}" bindings="dialplan"/>
+      <!-- <param name="gateway-credentials" value="muser:mypass"/> -->
+      <!-- <param name="auth-scheme" value="basic"/> -->
+      <!-- <param name="enable-cacert-check" value="true"/> -->
+      <!-- <param name="enable-ssl-verifyhost" value="true"/> -->
+      <!-- <param name="ssl-cert-path" value="$${certs_dir}/public_key.pem"/> -->
+      <!-- <param name="ssl-key-path" value="$${certs_dir}/private_key.pem"/> -->
+      <!-- <param name="ssl-key-password" value="MyPrivateKeyPassword"/> -->
       <param name="timeout" value="3"/>
+      <!-- <param name="ssl-cacert-file" value="$${certs_dir}/cacert.pem"/> -->
+      <!-- <param name="ssl-version" value="TLSv1"/> -->
+      <!-- <param name="cookie-file" value="$${temp_dir}/cookie-mod_xml_curl.txt"/> -->
+      <!-- <param name="enable-post-var" value="Unique-ID"/> -->
     </binding>
 
     <binding name="directory">
-      <param name="gateway-url" value="http://$${curl_gateway_url}/fsapi" bindings="directory"/>
+      <param name="gateway-url" value="$${curl_gateway_url}" bindings="directory"/>
       <param name="timeout" value="3"/>
     </binding>
 
     <binding name="configuration">
-      <param name="gateway-url" value="http://$${curl_gateway_url}/fsapi" bindings="configuration"/>
+      <param name="gateway-url" value="$${curl_gateway_url}" bindings="configuration"/>
       <param name="timeout" value="3"/>
     </binding>
 
     <binding name="phrases">
-      <param name="gateway-url" value="http://$${curl_gateway_url}/fsapi" bindings="phrases"/>
+      <param name="gateway-url" value="$${curl_gateway_url}" bindings="phrases"/>
       <param name="timeout" value="3"/>
     </binding>
 

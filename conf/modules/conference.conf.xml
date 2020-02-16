@@ -100,9 +100,9 @@
       <!-- Max number of times the user can be prompted for PIN -->
       <!-- <param name="pin-retries" value="3"/> -->
       <!-- Default Caller ID Name for outbound calls -->
-      <param name="caller-id-name" value="$${outbound_caller_name}"/>
+      <param name="caller-id-name" value="outbound_caller_name"/>
       <!-- Default Caller ID Number for outbound calls -->
-      <param name="caller-id-number" value="$${outbound_caller_id}"/>
+      <param name="caller-id-number" value="outbound_caller_id"/>
       <!-- Suppress start and stop talking events -->
       <!-- <param name="suppress-events" value="start-talking,stop-talking"/> -->
       <!-- enable comfort noise generation -->
@@ -146,8 +146,8 @@
       <param name="is-unlocked-sound" value="conference/conf-is-unlocked.wav"/>
       <param name="pin-sound" value="conference/conf-pin.wav"/>
       <param name="bad-pin-sound" value="conference/conf-bad-pin.wav"/>
-      <param name="caller-id-name" value="$${outbound_caller_name}"/>
-      <param name="caller-id-number" value="$${outbound_caller_id}"/>
+      <param name="caller-id-name" value="outbound_caller_name"/>
+      <param name="caller-id-number" value="outbound_caller_id"/>
       <param name="comfort-noise" value="true"/>
       <!-- <param name="tts-engine" value="flite"/> -->
       <!-- <param name="tts-voice" value="kal16"/> -->
@@ -171,8 +171,8 @@
       <param name="is-unlocked-sound" value="conference/conf-is-unlocked.wav"/>
       <param name="pin-sound" value="conference/conf-pin.wav"/>
       <param name="bad-pin-sound" value="conference/conf-bad-pin.wav"/>
-      <param name="caller-id-name" value="$${outbound_caller_name}"/>
-      <param name="caller-id-number" value="$${outbound_caller_id}"/>
+      <param name="caller-id-name" value="outbound_caller_name"/>
+      <param name="caller-id-number" value="outbound_caller_id"/>
       <param name="comfort-noise" value="true"/>
 
       <!-- <param name="conference-flags" value="video-floor-only|rfc-4579|livearray-sync|auto-3d-position|transcode-video|minimize-video-encoding"/> -->
@@ -210,8 +210,8 @@
       <param name="is-unlocked-sound" value="conference/conf-is-unlocked.wav"/>
       <param name="pin-sound" value="conference/conf-pin.wav"/>
       <param name="bad-pin-sound" value="conference/conf-bad-pin.wav"/>
-      <param name="caller-id-name" value="$${outbound_caller_name}"/>
-      <param name="caller-id-number" value="$${outbound_caller_id}"/>
+      <param name="caller-id-name" value="outbound_caller_name"/>
+      <param name="caller-id-number" value="outbound_caller_id"/>
       <param name="comfort-noise" value="true"/>
 
       <!-- <param name="conference-flags" value="video-floor-only|rfc-4579|livearray-sync|auto-3d-position|minimize-video-encoding"/> -->
@@ -247,8 +247,8 @@
       <param name="is-unlocked-sound" value="conference/conf-is-unlocked.wav"/>
       <param name="pin-sound" value="conference/conf-pin.wav"/>
       <param name="bad-pin-sound" value="conference/conf-bad-pin.wav"/>
-      <param name="caller-id-name" value="$${outbound_caller_name}"/>
-      <param name="caller-id-number" value="$${outbound_caller_id}"/>
+      <param name="caller-id-name" value="outbound_caller_name"/>
+      <param name="caller-id-number" value="outbound_caller_id"/>
       <param name="comfort-noise" value="false"/>
       <param name="conference-flags" value="livearray-json-status|json-events|video-floor-only|rfc-4579|livearray-sync|minimize-video-encoding|manage-inbound-video-bitrate|video-required-for-canvas|video-mute-exit-canvas|mute-detect"/>
       <param name="video-auto-floor-msec" value="1000"/>
@@ -283,8 +283,8 @@
       <param name="is-unlocked-sound" value="conference/conf-is-unlocked.wav"/>
       <param name="pin-sound" value="conference/conf-pin.wav"/>
       <param name="bad-pin-sound" value="conference/conf-bad-pin.wav"/>
-      <param name="caller-id-name" value="$${outbound_caller_name}"/>
-      <param name="caller-id-number" value="$${outbound_caller_id}"/>
+      <param name="caller-id-name" value="outbound_caller_name"/>
+      <param name="caller-id-number" value="outbound_caller_id"/>
       <param name="comfort-noise" value="false"/>
       <param name="conference-flags" value="livearray-json-status|json-events|video-floor-only|rfc-4579|livearray-sync|minimize-video-encoding|manage-inbound-video-bitrate|video-required-for-canvas|video-mute-exit-canvas|mute-detect"/>
       <param name="video-auto-floor-msec" value="1000"/>
@@ -318,8 +318,8 @@
       <param name="is-unlocked-sound" value="conference/conf-is-unlocked.wav"/>
       <param name="pin-sound" value="conference/conf-pin.wav"/>
       <param name="bad-pin-sound" value="conference/conf-bad-pin.wav"/>
-      <param name="caller-id-name" value="$${outbound_caller_name}"/>
-      <param name="caller-id-number" value="$${outbound_caller_id}"/>
+      <param name="caller-id-name" value="outbound_caller_name"/>
+      <param name="caller-id-number" value="outbound_caller_id"/>
       <param name="comfort-noise" value="false"/>
       <param name="conference-flags" value="livearray-json-status|json-events|video-floor-only|rfc-4579|livearray-sync|minimize-video-encoding|manage-inbound-video-bitrate|video-required-for-canvas|video-mute-exit-canvas|mute-detect"/>
       <param name="video-auto-floor-msec" value="1000"/>
@@ -353,8 +353,8 @@
       <param name="is-unlocked-sound" value="conference/conf-is-unlocked.wav"/>
       <param name="pin-sound" value="conference/conf-pin.wav"/>
       <param name="bad-pin-sound" value="conference/conf-bad-pin.wav"/>
-      <param name="caller-id-name" value="$${outbound_caller_name}"/>
-      <param name="caller-id-number" value="$${outbound_caller_id}"/>
+      <param name="caller-id-name" value="outbound_caller_name"/>
+      <param name="caller-id-number" value="outbound_caller_id"/>
       <param name="comfort-noise" value="false"/>
       <param name="conference-flags" value="livearray-json-status|json-events|video-floor-only|rfc-4579|livearray-sync|minimize-video-encoding|manage-inbound-video-bitrate|video-required-for-canvas|video-mute-exit-canvas|mute-detect"/>
       <param name="video-auto-floor-msec" value="1000"/>
