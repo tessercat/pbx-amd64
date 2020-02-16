@@ -1,5 +1,10 @@
 <configuration name="switch.conf" description="Core Configuration">
 
+  <!--
+    These apply only when FS is started from the command line, and
+    fs_cli hard-codes its keybindings, so I'm not sure what the point
+    of these is.
+  -->
   <cli-keybindings>
     <key name="1" value="help"/>
     <key name="2" value="status"/>

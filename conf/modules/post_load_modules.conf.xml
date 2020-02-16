@@ -2,12 +2,9 @@
   <modules>
 
     <!--
-      Once mod_xml_curl is loaded, it makes requests to gateway URLs.
-      Config files acl.conf.xml and post_load_switch.conf.xml
-      are loaded after this, just before event socket config.
-      Reloading XML tries to load seemingly random config from
-      gateway URLs, but not mod_sofia config, so I'm not sure if
-      this will work.
+      Once mod_xml_curl is loaded, it makes requests to gateway URLs,
+      so load modules with config fetched from the API after loading
+      mod_xml_curl.
     -->
     <load module="mod_xml_curl"/>
     <load module="mod_sofia"/>
