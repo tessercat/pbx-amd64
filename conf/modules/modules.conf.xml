@@ -1,13 +1,6 @@
 <configuration name="modules.conf" description="Modules">
   <modules>
 
-    <!--
-      Config for all but mod_event_socket are loaded in order.
-      Config for mod_event_socket is loaded last, but must be present.
-      Config files acl.conf.xml and post_load_switch.conf.xml
-      are loaded just before event socket config.
-    -->
-
     <!-- Loggers -->
     <load module="mod_console"/>
     <load module="mod_logfile"/>
@@ -20,12 +13,10 @@
 
     <!-- Applications -->
     <load module="mod_commands"/>
-    <load module="mod_conference"/>
     <load module="mod_curl"/>
     <load module="mod_dptools"/>
     <load module="mod_expr"/>
     <load module="mod_hash"/>
-    <load module="mod_voicemail"/>
 
     <!-- Dialplan Interfaces -->
     <load module="mod_dialplan_xml"/>
@@ -47,6 +38,18 @@
 
     <!-- Say -->
     <load module="mod_say_en"/>
+
+    <!-- XML Interfaces -->
+    <load module="mod_xml_curl"/>
+
+    <!-- "Dynamic" module config from here. -->
+
+    <!-- Endpoints -->
+    <load module="mod_sofia"/>
+
+    <!-- Applications -->
+    <load module="mod_conference"/>
+    <load module="mod_voicemail"/>
 
   </modules>
 </configuration>

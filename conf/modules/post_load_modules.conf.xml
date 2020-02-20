@@ -1,13 +1,4 @@
 <configuration name="post_load_modules.conf" description="Modules">
   <modules>
-
-    <!--
-      Once mod_xml_curl is loaded, it makes requests to gateway URLs,
-      so load modules with config fetched from the API after loading
-      mod_xml_curl.
-    -->
-    <load module="mod_xml_curl"/>
-    <load module="mod_sofia"/>
-
   </modules>
 </configuration>
