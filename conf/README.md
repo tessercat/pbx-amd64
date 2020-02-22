@@ -3,28 +3,20 @@ the switch reads config document sections
 from `freeswitch.xml`.
 
 
-# Document sections
+# Config document sections
 
 
 ## Vars
 
 The document includes variables in `vars.xml`.
-Variables must include at least:
+Variables must include:
 
     <include>
-      <X-PRE-PROCESS cmd="set" data="domain=<domain>"/>
+      <X-PRE-PROCESS cmd="set" data="hostname=<hostname>"/>
       <X-PRE-PROCESS cmd="set" data="curl_gateway_url=<curl_gateway_url>"/>
       <X-PRE-PROCESS cmd="set" data="rtp_port_start=<rtp_port_start>"/>
       <X-PRE-PROCESS cmd="set" data="rtp_port_end=<rtp_port_end>"/>
     </include>
-
-
-## Dialplan and directory sections
-
-Dialplans and directories
-are configured entirely by requests to
-the XML curl gateway URL in `vars.xml`.
-There are no file-system overrides.
 
 
 ## Configuration section
@@ -52,14 +44,23 @@ after all other modules have loaded
 and just before `mod_event_socket` loads,
 so `mod_xml_curl` always asks for config for all three.
 
-The content of `post_load_switch.conf.xml`
+According to the `mod_xml_curl` docs,
+the content of `post_load_switch.conf.xml`
 should be an exact copy of `switch.conf.xml`
 except for the configuration section name,
 which should be `post_load_switch.conf`.
 
-Module config is loaded only at boot
-and on module reload.
-Reloading modules may or may not affect service.
+NHote that module config is loaded only at boot
+and on module reload,
+and reloading modules affects service.
+
+
+## Dialplan and directory sections
+
+Dialplans and directories
+are configured entirely by requests to
+the XML curl gateway URL in `vars.xml`.
+There are no file-system overrides.
 
 
 ## Languages section
