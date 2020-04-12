@@ -16,17 +16,17 @@ my %vars = (
 	INSTALL => '/usr/bin/install -c',
 	LIBS => '',
 	CFLAGS => '-g -O2  -g -O2 -pthread -D_REENTRANT -D_GNU_SOURCE',
-	INCLUDES => '-I/opt/freeswitch/include',
-	LDFLAGS => '-L/opt/freeswitch/lib',
+	INCLUDES => '-I/opt/pbx/freeswitch/include',
+	LDFLAGS => '-L/opt/pbx/freeswitch/lib',
 	SOLINK => '-shared -Xlinker -x',
 
-	MODULESDIR => '/opt/freeswitch/mod',
-	LIBDIR => '/opt/freeswitch/lib',
-	BINDIR => '/opt/freeswitch/bin',
-	INCLUDEDIR => '/opt/freeswitch/include/freeswitch',
-	DBDIR => '/opt/freeswitch/db',
-	CONFDIR => '/opt/freeswitch/conf',
-	PREFIX => '/opt/freeswitch'
+	MODULESDIR => '/opt/pbx/freeswitch/mod',
+	LIBDIR => '/opt/pbx/freeswitch/lib',
+	BINDIR => '/opt/pbx/freeswitch/bin',
+	INCLUDEDIR => '/opt/pbx/freeswitch/include/freeswitch',
+	DBDIR => '/opt/pbx/freeswitch/db',
+	CONFDIR => '/opt/pbx/freeswitch/conf',
+	PREFIX => '/opt/pbx/freeswitch'
 );
 
 #

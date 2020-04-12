@@ -1,20 +1,20 @@
-prefix=/opt/freeswitch
-exec_prefix=/opt/freeswitch
+prefix=/opt/pbx/freeswitch
+exec_prefix=/opt/pbx/freeswitch
 libdir=${exec_prefix}/lib
 libexecdir=${exec_prefix}/libexec
-includedir=/opt/freeswitch/include/freeswitch
-modulesdir=/opt/freeswitch/mod
-runtimedir=/opt/freeswitch/run
-logfiledir=/opt/freeswitch/log
+includedir=/opt/pbx/freeswitch/include/freeswitch
+modulesdir=/opt/pbx/freeswitch/mod
+runtimedir=/opt/pbx/freeswitch/run
+logfiledir=/opt/pbx/freeswitch/log
 sysconfdir=${prefix}/etc
-confdir=/opt/freeswitch/conf
-dbdir=/opt/freeswitch/db
-htdocsdir=/opt/freeswitch/htdocs
-localstatedir=/opt/freeswitch
-grammardir=/opt/freeswitch/grammar
-soundsdir=/opt/freeswitch/sounds
-scriptdir=/opt/freeswitch/scripts
-recordingsdir=/opt/freeswitch/recordings
+confdir=/opt/pbx/freeswitch/conf
+dbdir=/opt/pbx/freeswitch/db
+htdocsdir=/opt/pbx/freeswitch/htdocs
+localstatedir=/opt/pbx/freeswitch
+grammardir=/opt/pbx/freeswitch/grammar
+soundsdir=/opt/pbx/freeswitch/sounds
+scriptdir=/opt/pbx/freeswitch/scripts
+recordingsdir=/opt/pbx/freeswitch/recordings
 bindir=${exec_prefix}/bin
 
 Name: freeswitch
