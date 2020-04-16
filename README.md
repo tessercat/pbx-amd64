@@ -1,8 +1,10 @@
 This repo contains
 FreeSWITCH binaries and module config
-for a simple FreeSWITCH-based SIP PBX.
+for a verto-based
+group chat and conference service.
+
 Most module config
-and all directory/dialplan/phrase config
+and all directory/dialplan config
 is via `mod_xml_curl`.
 
 The binaries and module config
