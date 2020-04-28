@@ -1,7 +1,6 @@
 This repo contains
 FreeSWITCH binaries and module config
-for a verto-based
-group chat and conference service.
+for a generic FreeSWITCH-based PBX.
 
 Most module config
 and all directory/dialplan config
@@ -16,5 +15,5 @@ support the following.
 - Voicemail
 - Music on hold
 - Auto-attendant
-- WebRTC
+- WebRTC (SIP or Verto)
 - CDRs
