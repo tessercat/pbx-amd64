@@ -1,24 +1,24 @@
-prefix=/opt/verto/freeswitch
-exec_prefix=/opt/verto/freeswitch
+prefix=/opt/pbx/freeswitch
+exec_prefix=/opt/pbx/freeswitch
 libdir=${exec_prefix}/lib
 libexecdir=${exec_prefix}/libexec
-includedir=/opt/verto/freeswitch/include/freeswitch
-modulesdir=/opt/verto/freeswitch/mod
-runtimedir=/opt/verto/freeswitch/run
-logfiledir=/opt/verto/freeswitch/log
+includedir=/opt/pbx/freeswitch/include/freeswitch
+modulesdir=/opt/pbx/freeswitch/mod
+runtimedir=/opt/pbx/freeswitch/run
+logfiledir=/opt/pbx/freeswitch/log
 sysconfdir=${prefix}/etc
-confdir=/opt/verto/freeswitch/conf
-dbdir=/opt/verto/freeswitch/db
-htdocsdir=/opt/verto/freeswitch/htdocs
-localstatedir=/opt/verto/freeswitch
-grammardir=/opt/verto/freeswitch/grammar
-soundsdir=/opt/verto/freeswitch/sounds
-scriptdir=/opt/verto/freeswitch/scripts
-recordingsdir=/opt/verto/freeswitch/recordings
+confdir=/opt/pbx/freeswitch/conf
+dbdir=/opt/pbx/freeswitch/db
+htdocsdir=/opt/pbx/freeswitch/htdocs
+localstatedir=/opt/pbx/freeswitch
+grammardir=/opt/pbx/freeswitch/grammar
+soundsdir=/opt/pbx/freeswitch/sounds
+scriptdir=/opt/pbx/freeswitch/scripts
+recordingsdir=/opt/pbx/freeswitch/recordings
 bindir=${exec_prefix}/bin
 
 Name: freeswitch
-Version: 1.10.2-release
+Version: 1.10.3-release
 Description: FreeSWITCH open source telephony platform
 Libs: -L${libdir} -lfreeswitch
 Cflags: -I${includedir}
