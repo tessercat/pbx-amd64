@@ -7,8 +7,4 @@
     <X-PRE-PROCESS cmd="include" data="modules/*.xml"/>
   </section>
 
-  <section name="languages" description="Language Management">
-    <X-PRE-PROCESS cmd="include" data="lang/en/*.xml"/>
-  </section>
-
 </document>

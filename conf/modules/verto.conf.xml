@@ -22,6 +22,7 @@
       <param name="force-register-domain" value="$${hostname}"/>
       <param name="userauth" value="true"/>
       <param name="blind-reg" value="false"/>
+      <param name="ext-rtp-ip" value="$${local_ip_v6}"/>
     </profile>
   </profiles>
 
