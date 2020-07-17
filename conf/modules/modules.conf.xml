@@ -9,8 +9,8 @@
     <load module="mod_event_socket"/>
 
     <!-- Endpoints -->
-    <load module="mod_verto"/>
     <load module="mod_rtc"/>
+    <load module="mod_verto"/>
 
     <!-- Applications -->
     <load module="mod_commands"/>

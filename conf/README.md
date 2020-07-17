@@ -10,10 +10,11 @@ from `freeswitch.xml`.
 Note that
 [`mod_xml_curl`](https://freeswitch.org/confluence/display/FREESWITCH/mod_xml_curl)
 is configured to
-bind to `dialplan`,
+bind to all sections, including
+`dialplan`,
 `directory`,
 `configuration`
-and `phrases` sections.
+and `phrases`.
 There are no file-system overrides.
 
 
@@ -28,7 +29,8 @@ Variables must include:
       <X-PRE-PROCESS cmd="set" data="curl_gateway_url=<curl_gateway_url>"/>
       <X-PRE-PROCESS cmd="set" data="rtp_port_start=<rtp_port_start>"/>
       <X-PRE-PROCESS cmd="set" data="rtp_port_end=<rtp_port_end>"/>
-      <X-PRE-PROCESS cmd="set" data="verto_ws_port=<verto_ws_port>"/>
+      <X-PRE-PROCESS cmd="set" data="chat_ws_port=<chat_ws_port>"/>
+      <X-PRE-PROCESS cmd="set" data="chat_debug_level=<chat_debug_level>"/>
     </include>
 
 
@@ -53,7 +55,7 @@ the switch loads
 `post_load_modules.conf`,
 `post_load_switch.conf`
 after all other modules have loaded.
-In order, requests
+In order, requests are for
 `post_load_modules.conf`,
 `acl.conf`,
 `event_socket.conf`

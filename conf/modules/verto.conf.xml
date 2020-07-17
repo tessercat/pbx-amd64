@@ -1,28 +1,26 @@
 <configuration name="verto.conf" description="HTML5 Verto Endpoint">
 
   <settings>
-    <param name="debug" value="0"/>
-    <!-- <param name="detach-timeout-sec" value="60"/> -->
-    <!-- <param name="enable-fs-events" value="false"/> -->
+    <param name="debug" value="$${chat_debug_level}"/>
     <!-- <param name="enable-presence" value="true"/> -->
+    <!-- <param name="enable-fs-events" value="true"/> -->
+    <!-- <param name="detach-timeout-sec" value="120"/> -->
   </settings>
 
   <profiles>
-     <profile name="verto4">
-      <param name="bind-local" value="127.0.0.1:$${verto_ws_port}"/>
+    <profile name="chat4">
       <param name="secure-combined" value="$${certs_dir}/wss.pem"/>
-      <param name="force-register-domain" value="$${hostname}"/>
+      <param name="bind-local" value="127.0.0.1:$${chat_ws_port}"/>
+      <param name="force-register-domain" value="chat"/>
       <param name="userauth" value="true"/>
       <param name="blind-reg" value="false"/>
-      <param name="ext-rtp-ip" value="$${local_ip_v4}"/>
     </profile>
-     <profile name="verto6">
-      <param name="bind-local" value="[::1]:$${verto_ws_port}"/>
+    <profile name="chat6">
       <param name="secure-combined" value="$${certs_dir}/wss.pem"/>
-      <param name="force-register-domain" value="$${hostname}"/>
+      <param name="bind-local" value="[::1]:$${chat_ws_port}"/>
+      <param name="force-register-domain" value="chat"/>
       <param name="userauth" value="true"/>
       <param name="blind-reg" value="false"/>
-      <param name="ext-rtp-ip" value="$${local_ip_v6}"/>
     </profile>
   </profiles>
 

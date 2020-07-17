@@ -13,7 +13,9 @@
     <!-- <param name="module-directory" value="/usr/local/lib/lua/5.1/?.so"/> -->
 
     <!-- Event hooks. -->
-    <!--<hook event="CUSTOM" subclass="conference::maintenance" script="catch-event.lua"/>-->
+    <!--hook event="CUSTOM" subclass="verto::client_connect" script="verto.lua"/>
+    <hook event="CUSTOM" subclass="verto::client_disconnect" script="verto.lua"/>
+    <hook event="CUSTOM" subclass="verto::login" script="verto.lua"/-->
 
   </settings>
 </configuration>
