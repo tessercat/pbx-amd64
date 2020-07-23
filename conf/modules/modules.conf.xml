@@ -8,10 +8,6 @@
     <!-- Event Handlers. -->
     <load module="mod_event_socket"/>
 
-    <!-- Endpoints -->
-    <load module="mod_rtc"/>
-    <load module="mod_verto"/>
-
     <!-- Applications -->
     <load module="mod_commands"/>
     <load module="mod_curl"/>
@@ -19,9 +15,6 @@
 
     <!-- Dialplan Interfaces -->
     <load module="mod_dialplan_xml"/>
-
-    <!-- File Format Interfaces -->
-    <!--load module="mod_av"/-->
 
     <!-- Codec Interfaces -->
     <load module="mod_opus"/>
@@ -35,6 +28,10 @@
     <load module="mod_xml_curl"/>
 
     <!-- "Dynamic" module config from here. -->
+
+    <!-- Endpoints -->
+    <load module="mod_rtc"/>
+    <load module="mod_verto"/>
 
   </modules>
 </configuration>
