@@ -12,7 +12,6 @@
     <load module="mod_commands"/>
     <load module="mod_curl"/>
     <load module="mod_dptools"/>
-    <load module="mod_sms"/>
 
     <!-- Dialplan Interfaces -->
     <load module="mod_dialplan_xml"/>
