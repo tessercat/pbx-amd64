@@ -33,8 +33,5 @@
     <load module="mod_rtc"/>
     <load module="mod_verto"/>
 
-    <!-- Applications -->
-    <load module="mod_conference"/>
-
   </modules>
 </configuration>
