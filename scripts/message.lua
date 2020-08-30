@@ -3,7 +3,8 @@ if (event:getHeader("proto") == "verto" and event:getHeader("dest_proto") == "GL
     data = string.format(
         data,
         event:getHeader("from_user"),
-        event:getHeader("to"), event:getHeader("FreeSWITCH-Hostname"),
+        event:getHeader("to"),
+        event:getHeader("FreeSWITCH-Hostname"),
         event:getBody()
     )
     -- freeswitch.consoleLog('INFO', data)
