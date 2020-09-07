@@ -6,7 +6,8 @@ freeswitch.API():execute(
         '%s post %s',
         freeswitch.getGlobalVariable('curl_gateway_url'),
         string.format(
-            'action=verto_client_disconnect&client_id=%s',
+            'hostname=%s&action=verto_client_disconnect&client_id=%s',
+            event:getHeader('FreeSWITCH-Hostname'),
             event:getHeader('verto_login')
         )
     )

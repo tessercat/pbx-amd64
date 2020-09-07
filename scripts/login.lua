@@ -1,12 +1,13 @@
 -- freeswitch.consoleLog('INFO', event:serialize())
-if (event:getHeader('verto_login') ~= '1') then return end
+if (event:getHeader('verto_success') ~= '1') then return end
 local reply = freeswitch.API():execute(
     'curl',
     string.format(
         '%s post %s',
         freeswitch.getGlobalVariable('curl_gateway_url'),
         string.format(
-            'action=verto_client_login&client_id=%s&session_id=%s',
+            'hostname=%s&action=verto_client_login&client_id=%s&session_id=%s',
+            event:getHeader('FreeSWITCH-Hostname'),
             event:getHeader('verto_login'),
             event:getHeader('verto_sessid')
         )
