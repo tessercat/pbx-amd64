@@ -13,7 +13,7 @@ local reply = freeswitch.API():execute(
         )
     )
 )
-if (reply == 'punt') then
+if (string.find(reply, 'punt')) then
     freeswitch.consoleLog(
         'WARNING',
         string.format(
