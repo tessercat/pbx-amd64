@@ -1,0 +1,60 @@
+<configuration name="avcodec.conf" description="AVCodec Config">
+  <settings>
+    <param name="dec-threads" value="1"/>
+    <param name="enc-threads" value="cpu/2/4"/>
+  </settings>
+
+  <profiles>
+    <profile name="H263">
+    </profile>
+
+    <profile name="H263+">
+    </profile>
+
+    <profile name="H264">
+      <param name="flags" value="LOOP_FILTER|PSNR"/>
+      <param name="colorspace" value="0"/>
+      <param name="color-range" value="2"/>
+      <options>
+        <option name="preset" value="veryfast"/>
+        <option name="intra_refresh" value="1"/>
+        <option name="tune" value="animation+zerolatency"/>
+        <option name="sc_threshold" value="40"/>
+        <option name="b_strategy" value="1"/>
+        <option name="crf" value="18"/>
+      </options>
+    </profile>
+
+    <profile name="H265">
+    </profile>
+
+    <profile name="conference">
+      <param name="dec-threads" value="1"/>
+      <param name="enc-threads" value="cpu/2/4"/>
+
+      <codecs>
+        <codec name="H263" profile="H263"/>
+        <codec name="H264" profile="H264"/>
+        <codec name="H264" profile="conference-H264"/>
+      </codecs>
+    </profile>
+
+    <profile name="conference-H264">
+      <options>
+        <option name="preset" value="veryfast"/>
+        <option name="intra_refresh" value="1"/>
+        <option name="tune" value="animation+zerolatency"/>
+        <option name="sc_threshold" value="40"/>
+        <option name="b_strategy" value="1"/>
+        <option name="crf" value="10"/>
+      </options>
+    </profile>
+
+  </profiles>
+</configuration>
+
+<configuration name="avformat.conf" description="AVFormat Config">
+  <settings>
+    <param name="colorspace" value="1"/>
+  </settings>
+</configuration>

@@ -1,0 +1,5 @@
+<configuration name="conference.conf" description="A/V Conference">
+  <!-- This is a stub to avoid an error log. Real config loads from config server. -->
+  <profiles>
+  </profiles>
+</configuration>

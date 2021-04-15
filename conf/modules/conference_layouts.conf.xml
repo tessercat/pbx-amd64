@@ -1,4 +1,4 @@
-<configuration name="conference_layouts.conf" description="Audio Conference">
+<configuration name="conference_layouts.conf" description="Conference layouts">
   <layout-settings>
     <layouts>
       <layout name="1x1">

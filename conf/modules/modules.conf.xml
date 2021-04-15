@@ -12,6 +12,7 @@
     <load module="mod_commands"/>
     <load module="mod_curl"/>
     <load module="mod_dptools"/>
+    <load module="mod_av"/>
 
     <!-- Dialplan Interfaces -->
     <load module="mod_dialplan_xml"/>
@@ -28,6 +29,9 @@
     <load module="mod_xml_curl"/>
 
     <!-- "Dynamic" module config from here. -->
+
+    <!-- Applications -->
+    <load module="mod_conference"/>
 
     <!-- Endpoints -->
     <load module="mod_rtc"/>

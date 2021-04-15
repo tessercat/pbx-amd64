@@ -2,6 +2,7 @@
 <document type="freeswitch/xml">
 
   <X-PRE-PROCESS cmd="include" data="vars.xml"/>
+  <X-PRE-PROCESS cmd="codecs" data="opus,vp8,vp9,h264"/>
 
   <section name="configuration" description="Module Configuration">
     <X-PRE-PROCESS cmd="include" data="modules/*.xml"/>
