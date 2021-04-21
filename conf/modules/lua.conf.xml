@@ -15,7 +15,6 @@
     <!-- Event hooks. -->
     <hook event="CUSTOM" subclass="verto::login" script="login.lua"/>
     <hook event="CUSTOM" subclass="verto::client_disconnect" script="disconnect.lua"/>
-    <hook event="MESSAGE" script="message.lua"/>
 
   </settings>
 </configuration>
