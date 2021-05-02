@@ -28,12 +28,13 @@
     <!-- XML Interfaces -->
     <load module="mod_xml_curl"/>
 
-    <!-- "Dynamic" module config from here. -->
+    <!-- XML-curl module config from here. -->
 
     <!-- Applications -->
     <load module="mod_conference"/>
 
     <!-- Endpoints -->
+    <load module="mod_sofia"/>
     <load module="mod_rtc"/>
     <load module="mod_verto"/>
 
