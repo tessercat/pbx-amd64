@@ -15,7 +15,9 @@
     <load module="mod_av"/>
 
     <!-- Formats -->
+    <load module="mod_sndfile"/>
     <load module="mod_local_stream"/>
+    <load module="mod_tone_stream"/>
 
     <!-- Dialplan Interfaces -->
     <load module="mod_dialplan_xml"/>

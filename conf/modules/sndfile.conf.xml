@@ -1,0 +1,5 @@
+<configuration name="sndfile.conf">
+  <settings>
+      <!--param name="allowed-extensions" value="wav,raw,r8,r16"/-->
+    </settings>
+  </configuration>
