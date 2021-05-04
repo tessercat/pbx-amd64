@@ -14,6 +14,9 @@
     <load module="mod_dptools"/>
     <load module="mod_av"/>
 
+    <!-- Formats -->
+    <load module="mod_local_stream"/>
+
     <!-- Dialplan Interfaces -->
     <load module="mod_dialplan_xml"/>
 
