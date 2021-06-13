@@ -1,13 +1,7 @@
 <configuration name="local_stream.conf" description="Local file stream config">
 
-  <directory name="video" path="$${sounds_dir}/video">
-    <param name="shuffle" value="true"/>
-    <param name="channels" value="1"/>
-    <param name="interval" value="20"/>
-    <param name="timer-name" value="soft"/>
-  </directory>
-
-  <directory name="audio" path="$${sounds_dir}/audio">
+  <directory name="pcmu" path="$${sounds_dir}/pcmu">
+    <param name="rate" value="8000"/>
     <param name="shuffle" value="true"/>
     <param name="channels" value="1"/>
     <param name="interval" value="20"/>
